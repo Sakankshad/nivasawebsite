@@ -1,0 +1,141 @@
+/* PROGRESS BAR */
+
+#progress-bar {
+	padding: 100px 50px;
+}
+
+#progressbarContainer {
+    display: grid;
+}
+
+#emptyProgressbar {
+    height: 5px;
+    width: 100%;
+    margin: 22.5px 0;
+    background: rgb(100, 100, 100);
+}
+
+#completedProgress {
+    margin-top: -27.5px;
+    width: 0;
+    height: 5px;
+    background: #baff00;
+    transition: 0.5s;
+}
+
+#progressbarContainer ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+
+#progressbarContainer ul li {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    border: 5px solid rgb(100, 100, 100);
+    border-radius: 100%;
+    background: #FFFFF0;
+    transition: 0.5s;
+}
+
+.completedStep {
+    border-color:#baff00 !important;
+    background-color: #baff00 !important;
+    color: white !important;
+}
+
+.activeStep {
+    border-color: #baff00 !important;
+    color: #000 !important;
+}
+
+
+/* PAGES */
+.stepPage {
+    display: none;
+    /*height: 150px;*/
+    padding: 75px 50px 25px 50px;
+}
+
+
+/* NEXT/PREVIOUS BUTTONS */
+
+#progress-bar nav {
+    height: 50px;
+    text-align: center;
+}
+
+#progress-bar nav button {
+	margin: 0 10px;
+}
+
+#progress-bar button {
+    /*font-family: 'Righteous', cursive;*/
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    border: 5px solid rgb(100, 100, 100);
+    border-radius: 100%;
+    background: #FFFFF0;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+#next {
+    /*float: right;*/
+}
+
+#prev {
+    visibility: hidden;
+}
+
+#progress-bar button:hover {
+    color: #000;
+    border-color: #baff00;
+}
+
+.stepPage .progressbar-icon {
+	font-size: 150px;
+	text-align: center;
+}
+
+.stepPage .row {
+	max-width: 750px;
+	margin: auto;
+}
+
+.stepPage .progressbar-text {
+	margin: auto;
+}
+
+.stepPage .progressbar-text h3 {
+    background: #baff00;
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 45px;
+}
+
+.stepPage .progressbar-text p {
+	font-size: 20px;
+}
+
+.completedStep .material-icons {
+	color: #000;
+}
+
+.progressbar-icon i {
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}

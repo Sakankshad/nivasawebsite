@@ -2143,4 +2143,15 @@ ol {
 	font-size: 60px;
 	opacity: 75%;
 }
+.footer-social i {
+	color: #baff00;
+}
 
+.footer-social i:hover {
+	color: #fff;
+}
+
+@font-face {
+          font-family: hobo;
+          src: url(../fonts/HoboStd.otf);
+        }

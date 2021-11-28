@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/progress-bar.css"/>
 
 	<script src="https://kit.fontawesome.com/a146803837.js" crossorigin="anonymous"></script>
 
@@ -47,10 +48,9 @@
 		</a>
 		<nav class="nav-menu">
 			<ul>
-				<li class="active"><a href="home.html">Home</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="about.html">About us</a></li>
-				<li><a href="service.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
@@ -91,7 +91,7 @@
 			</div>	
 		</div>
 		<div class="slide-num-holder" id="snh-1"></div>
-		<div class="hero-right-text">architecture</div>
+		<div class="hero-right-text">real estate</div>
 	</section>
 	<!-- Hero section end -->
 
@@ -109,7 +109,8 @@
 					<br>
 					<br>
 					Also, a number of mega infrastructure projects undergoing in the city would not only make commuting easier for our residents there, but would also available all the essentials needed for a standard lifestyle. </p>
-					<a href="#" class="site-btn sb-dark">More Details</a>
+					<button class="site-btn sb-light site-btn sb-dark" data-animation="fadeInUp" data-delay="700ms" type="button" data-toggle="modal" data-target="#myModal" style="text-shadow: none;">Enquire Now &#8594;</button>
+					<!-- <a href="#" class="site-btn sb-dark">More Details</a> -->
 				</div>
 				<div class="col-lg-5 pt-4">
 					<img src="img/intro.png" alt="">
@@ -325,9 +326,135 @@
 	</section>
 	<!-- Milestones section end -->
 
+	<section>
+		<h2 class="sp-title" style="text-align: center; padding: 0px 50px 0 50px; margin: 0;">What is the <span>Procedure</span>?</h2>
+		<div id="progress-bar">
+		    <div id="progressbarContainer">
+		        <div id="emptyProgressbar"></div>
+		        <div id="completedProgress"></div>
+		        <ul>
+		            <li id="stepLable1">1</li>
+		            <li id="stepLable2">2</li>
+		            <li id="stepLable3">3</li>
+		            <li id="stepLable4">4</li>
+		            <li id="stepLable5">5</li>
+		            <li id="stepLable6">6</li>
+		            <li id="stepLable7">7</li>
+		        </ul>
+		    </div>
+		    <div class="stepPage" id="stepPage1">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="far fa-file-alt"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Enquiry
+		        		</h3>
+		        		<p>
+		        			Put up an enquiry or connect to us for the plot of interest.
+		        		</p>
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="stepPage" id="stepPage2">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="fas fa-headset"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Reachout
+		        		</h3>
+		        		<p>
+		        			We will call and walk through to understand your needs and persual.
+		        		</p>
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="stepPage" id="stepPage3">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="fas fa-bahai"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Offerings
+		        		</h3>
+		        		<p>
+		        			We will share the most suited plot and their details as per your likings and budget.
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="stepPage" id="stepPage4">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="fas fa-car"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Site Visit
+		        		</h3>
+		        		<p>
+		        			We will take you for site visit and attend all your queries. 
+		        		</p>
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="stepPage" id="stepPage5">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="fas fa-clipboard-check"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Booking
+		        		</h3>
+		        		<p>
+		        			Once you are fully satisfied with the plot, we book the plot for you.
+		        		</p>
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="stepPage" id="stepPage6">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="fas fa-rupee-sign"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Payment
+		        		</h3>
+		        		<p>
+		        			Booking payment and booking confirmation of your favourite plot is done.
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="stepPage" id="stepPage7">
+		        <div class="row">
+		        	<div class="col-lg-4 progressbar-icon">
+		        		<i class="far fa-handshake"></i>
+		        	</div>
+		        	<div class="col-lg-8 progressbar-text">
+		        		<h3>
+		        			Agreement
+		        		</h3>
+		        		<p>
+		        			All agreement paperwork completion within a month from the date of booking.
+		        		</p>
+		        	</div>
+		        </div>
+		    </div>
+		    <nav>
+		        <button id="prev" onclick="prev()"><</button>
+		        <button id="next" onclick="next()">></button>
+		    </nav>
+		</div>
+	</section>
+
 
 	<!-- Projects section start -->
-	<div class="projects-section pb50">
+	<!-- <div class="projects-section pb50">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3">
@@ -382,12 +509,12 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Projects section end -->
 
 
 	<!-- Clients section start -->
-	<div class="client-section spad">
+	<!-- <div class="client-section spad">
 		<div class="container">
 			<div id="client-carousel" class="client-slider">
 				<div class="single-brand">
@@ -417,19 +544,28 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Clients section end -->
+
+	<section style="padding: 50px; background-color: #baff00">
+		<div class="row">
+			<div class="col-lg-6" style="margin: auto;">
+				<h2 style="text-align: center;">Get your Dream Home Today!</h2>
+			</div>
+			<div class="col-lg-6">
+				<button class="site-btn sb-light turned-button" style="color: #000; text-shadow: none; margin: auto;" data-animation="fadeInUp" data-delay="700ms" type="button" data-toggle="modal" data-target="#myModal">Enquire Now &#8594;</button>
+			</div>
+		</div>
+	</section>
 
 
 	<!-- Footer section start -->
 	<footer class="footer-section">
 		<div class="footer-social">
 			<div class="social-links">
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100073113204751"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/p/CWNuyNnvjWc/?utm_medium=share_sheet"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-google"></i></a>
 			</div>
 		</div>
 		<div class="container">
@@ -475,7 +611,7 @@
 		</div>
 
 		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-     <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.  <br>This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></div>
+     <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.  <br> Designed & Developed by <a href="https://loons.co.in/" target="_blank"><span style="font-family: hobo; color: #00abb6">Lo<span style="color: #f8951d">O</span>ns</span></a> </div>
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
 	</footer>
@@ -487,7 +623,7 @@
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
-                           <img src="img/Nivasa-Homes-Pvt-Ltd-Logo.png" style="width: 50%; margin: auto; max-width: 400px;">
+                           <!-- <img src="img/Nivasa-Homes-Pvt-Ltd-Logo.png" style="width: 50%; margin: auto; max-width: 400px;"> -->
                            <button type="button" class="close" style="position: fixed; right: 20px;" data-dismiss="modal">&times;</button>
                         </div>
                         <div>
@@ -507,49 +643,16 @@
                                       <label for="name"> Number:</label>
                                       <input type="number" class="form-control" id="name" name="Number" required maxlength="50">
                                   </div>
-                                  <div class="form-group col-lg-12">
-                                      <label for="Services"> Interested In:</label>
-                                      <div class="row" style="margin: 0 !important">
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Ukraine" value="Yes">
-                                          <label>Ukraine</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Russia" value="Yes">
-                                          <label>Russia</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Kazakhstan" value="Yes">
-                                          <label>Kazakhstan</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Kyrgyzstan" value="Yes">
-                                          <label>Kyrgyzstan</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Philippines" value="Yes">
-                                          <label>Philippines</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Bangladesh" value="Yes">
-                                          <label>Bangladesh</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Armenia" value="Yes">
-                                          <label>Armenia</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Nepal" value="Yes">
-                                          <label>Nepal</label>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <input type="checkbox" name="Georgia" value="Yes">
-                                          <label>Georgia</label>
-                                        </div>
-                                      </div>
+                                  <div class="form-group col-lg-6">
+                                      <label for="name">Alternate Number:</label>
+                                      <input type="number" class="form-control" id="name" name="Alt-Number" required maxlength="50">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label for="name"> Email:</label>
+                                      <input type="text" class="form-control" id="name" name="Email" required maxlength="50">
                                   </div>
                                   <div class="form-group col-lg-12">
-                                      <label for="name"> Interested College:</label>
+                                      <label for="name"> Details:</label>
                                       <textarea class="form-control" type="textarea" name="College" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
                                   </div>
                                 </div>
@@ -575,7 +678,7 @@
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/main.js"></script>
-	<script type="js/form.js"></script>
-    <script type="text/javascript" src="js/formData.js"></script>
+    <script src="js/formData.js"></script>
+    <script src="js/progress-bar.js"></script>
 </body>
 </html>
