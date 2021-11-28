@@ -1146,7 +1146,7 @@ ol {
 	height: calc(100% + 120px);
 	left: 0;
 	top: -60px;
-	background-image: url("../img/cta-img.jpg");
+	background-image: url("../img/vision.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -1705,6 +1705,9 @@ ol {
 	text-decoration: underline;
 	-webkit-text-decoration-color: #2046f2;
 	        text-decoration-color: #2046f2;
+	background: #baff00;
+    padding: 10px 10px;
+    text-decoration: none;
 }
 
 .portfolio-warp {
@@ -2155,3 +2158,7 @@ ol {
           font-family: hobo;
           src: url(../fonts/HoboStd.otf);
         }
+
+.team-section .row div {
+	margin: 15px 0;
+}
