@@ -448,10 +448,11 @@ ol {
 }
 
 .logo-area {
-	float: left;
+	/*float: left;*/
 	display: inline-block;
 	background: #fff;
 	padding: 20px 60px 30px;
+	border-radius: 0 0 25px 0;
 }
 
 .phone-number {
@@ -1054,18 +1055,17 @@ ol {
 /*  Footer Section CSS
 /*----------------------------------------*/
 .footer-section {
-	padding-top: 110px;
-	padding-bottom: 110px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	border-top: 1px solid #c8c8c8;
 	position: relative;
 }
 
-.footer-section .copyright {
-	position: absolute;
-	top: 50%;
-	margin-top: -12px;
-	left: 60px;
-	color: #737373;
+.copyright {
+	color: #000000;
+	padding: 25px 15px;
+	text-align: center;
+	border-top: 5px dashed #000000;
 }
 
 .footer-section .footer-social {
@@ -1084,7 +1084,7 @@ ol {
 
 .footer-item ul li {
 	display: block;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 
 .footer-item ul li a {
@@ -1822,6 +1822,7 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.logo-area {
 		padding: 20px 40px 30px;
+		border-radius: 0 0 25px 0;
 	}
 	.slide-content {
 		margin-left: 170px;
@@ -1915,23 +1916,13 @@ ol {
 		margin-left: 0;
 		margin-right: 15px;
 	}
-	.footer-section .copyright {
-		position: relative;
-		width: 100%;
-		max-width: 720px;
-		margin: 40px auto 0;
-		left: 0;
-		top: 0;
-		margin-bottom: -50px;
-		padding-left: 15px;
-	}
 }
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
 	h1,
 	.sp-title {
-		font-size: 45px;
+		font-size: 45px !important;
 	}
 	.page-header-section .header-title {
 		font-size: 55px;
@@ -1968,7 +1959,7 @@ ol {
 		margin-right: 0;
 	}
 	.nav-menu ul li a:after {
-		left: 20px;
+		/*left: 20px;*/
 	}
 	.nav-menu ul li.active>a:after,
 	.nav-menu ul li a:hover:after {
@@ -2056,19 +2047,24 @@ ol {
 		padding: 0 15px;
 		margin-bottom: 0;
 	}
-	.footer-section .copyright {
-		position: relative;
-		width: 100%;
-		max-width: 720px;
-		margin: 40px auto 0;
-		left: 0;
-		top: 0;
-		margin-bottom: -50px;
-		padding-left: 15px;
-		text-align: center;
-	}
 	.footer-item {
 		margin-bottom: 40px;
+	}
+	.service-section.spad .col-lg-4.col-md-6 {
+		padding: 0 50px;
+	}
+	.logo {
+		width: 100px !important;
+	}
+	.logo-area {
+		padding: 10px 40px 15px !important;
+		border-radius: 0 0 25px 25px;
+	}
+	.header-area {
+		text-align: center;
+	}
+	.hero-slider h2 {
+		margin-bottom: 15px;
 	}
 }
 
@@ -2078,8 +2074,8 @@ ol {
 		padding: 20px 30px 30px;
 	}
 	.header-area {
-		background: #121212;
-		padding-right: 66px;
+		/*background: #121212;*/
+		/*padding-right: 66px;*/
 	}
 	.nav-menu {
 		width: 100%;
@@ -2098,7 +2094,7 @@ ol {
 		padding: 0 15px;
 	}
 	.slide-content h2 {
-		font-size: 35px;
+		font-size: 45px;
 		line-height: 1.5;
 	}
 	.portfolio-warp .grid-item {
@@ -2117,11 +2113,11 @@ ol {
 }
 
 .logo {
-	width: 150px !important;
+	width: 150px;
 }
 
 .slide-inner h2 {
-	-webkit-text-stroke: 1px #086d40;
+	/*-webkit-text-stroke: 1px #086d40;*/
     color: white;
     text-shadow: 3px 3px 0 #086d40,
     			-1px -1px 0 #086d40,
@@ -2161,4 +2157,22 @@ ol {
 
 .team-section .row div {
 	margin: 15px 0;
+}
+
+@media (max-width: 992px) {
+	.footer-section {
+		padding-top: 75px;
+		padding-bottom: 25px;
+	}
+	.CTA-Button {
+		text-align: center;
+    	margin: 15px 0;
+	}
+}
+
+@media (max-width: 525px) {
+	.copyright {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
 }

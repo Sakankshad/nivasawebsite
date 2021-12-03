@@ -22,7 +22,7 @@ $( document ).ready(function( $ ) {
 	
 		// fire off the request to /form.php
 		request = $.ajax({
-			url: "https://script.google.com/macros/s/AKfycbxKCng7m-K9Mlm0dOaoX4pz8CeqkMOHHk5GtmfCEdWgAXNFjkZGFichiVtikxotKDD1/exec",
+			url: "https://script.google.com/macros/s/AKfycbwPT6uNCFj0scjSVAdokikibDXsd6bSbBTrXIPp-qPfBH9oUbKi8g6d2ANdqdF7FPQp/exec",
 			type: "get",
 			data: serializedData
 		});
@@ -32,7 +32,7 @@ $( document ).ready(function( $ ) {
 			// log a message to the console
 			$('#result').html('<a href="https://docs.google.com/spreadsheets/d/1wB58j0ahcBC-LW4mlDx20aCMhPS6zyMPGJWzBTVEmF4/edit?usp=sharing" target="_blank">Success - see Google Sheet</a>');
 			console.log("Hooray, it worked!");
-			alert("Submitted! We will contact you soon. For urgent queries call +91 98017 05233");
+			alert("Submitted! We will contact you soon. For urgent queries call +91 79030 60094");
 		});
 	
 		// callback handler that will be called on failure
