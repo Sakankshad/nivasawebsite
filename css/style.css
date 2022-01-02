@@ -1110,6 +1110,11 @@ ol {
 .page-header-section .header-title {
 	font-size: 82px;
 	color: #fff;
+	text-shadow: 2px 2px 0 #086d40,
+				-1px -1px 0 #086d40, 
+				1px -1px 0 #086d40,
+				-1px 1px 0 #086d40,
+				1px 1px 0 #086d40;
 }
 
 .page-header-section .header-title span {

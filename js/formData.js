@@ -2,7 +2,7 @@ $( document ).ready(function( $ ) {
 	// variable to hold request
 	var request;
 	// bind to the submit event of our form
-	$("#reused_form").submit(function(event){
+	$(".reused_form").submit(function(event){
 		// abort any pending request
 		if (request) {
 			request.abort();
